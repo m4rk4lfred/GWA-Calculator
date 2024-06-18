@@ -76,7 +76,7 @@ public class mainFrame extends JFrame implements ActionListener {
         getContentPane().setLayout(null);
 
         mainPanel = new JPanel();
-        mainPanel.setBackground(new Color(85, 173, 155));
+        mainPanel.setBackground(new Color(251, 248, 241));
         mainPanel.setBounds(0, 0, 866, 600);
         mainPanel.setLayout(null);
 
@@ -91,18 +91,18 @@ public class mainFrame extends JFrame implements ActionListener {
         model = new DefaultTableModel(new Object[0][0], labels);
 
         gradesTable = new JTable();
-        gradesTable.setBackground(new Color(216, 239, 211));
-        gradesTable.setSelectionBackground(new Color ( 85, 173, 155));
+        gradesTable.setBackground(new Color(240, 235, 227));
+        gradesTable.setSelectionBackground(new Color (84, 186, 185));
         gradesTable.setModel(model);
         gradesTable.setBounds(36, 46, 548, 532);
         gradesTable.getTableHeader().setReorderingAllowed(false);
-        gradesTable.getTableHeader().setBackground(new Color(149, 210, 179));
+        gradesTable.getTableHeader().setBackground(new Color(233, 218, 193));
         
         JScrollPane scroller = new JScrollPane();
         scroller.setLocation(46, 106);
         scroller.setSize(new Dimension(792, 436));
         scroller.setViewportView(gradesTable);
-        scroller.getViewport().setBackground(new Color(149, 210, 179));
+        scroller.getViewport().setBackground(new Color(247, 236, 222));
 
         addSubjects = new JButton("Add Subject");
         addSubjects.setBackground(Color.WHITE);

@@ -5,6 +5,7 @@ import java.awt.EventQueue;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.filechooser.FileSystemView;
@@ -87,10 +88,11 @@ public class saveButton extends JFrame implements ActionListener {
             if (r == JFileChooser.APPROVE_OPTION) {
                 File file = fileChooser.getSelectedFile();
                 //THIS WILL CREATE A FILE WITH A .WORD ENDING
-                try (BufferedWriter writer = new BufferedWriter(new FileWriter(file + ".word"))) {
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter(file + ".doc"))) {
                     writer.write(toSave.getText());
+                    JOptionPane.showMessageDialog(null, "File Saved Successfully");
                 } catch (IOException ex) {
-                    ex.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Error in saving file");
                 }
             }
         }

@@ -73,6 +73,7 @@ public class mainFrame extends JFrame implements ActionListener {
         icon.getScaledInstance(1, 1, Image.SCALE_SMOOTH);
         this.setIconImage(icon);
         this.setIconImage(icon);
+        this.setResizable(false);
         getContentPane().setLayout(null);
 
         mainPanel = new JPanel();
@@ -105,7 +106,7 @@ public class mainFrame extends JFrame implements ActionListener {
         scroller.getViewport().setBackground(new Color(247, 236, 222));
 
         addSubjects = new JButton("Add Subject");
-        addSubjects.setBackground(Color.WHITE);
+        addSubjects.setBackground(new Color(251, 248, 241));
         addSubjects.setFont(new Font("Tahoma", Font.PLAIN, 11));
         addSubjects.setBounds(46, 44, 95, 31);
         addSubjects.addActionListener(this);
@@ -132,7 +133,7 @@ public class mainFrame extends JFrame implements ActionListener {
 
         getAverageButton = new JButton("Compute");
         getAverageButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        getAverageButton.setBackground(Color.WHITE);
+        getAverageButton.setBackground(new Color(251, 248, 241));
         getAverageButton.setBounds(423, 42, 95, 31);
         getAverageButton.addActionListener(this);
         getAverageButton.addMouseListener(new mouseAdapter());
@@ -150,7 +151,7 @@ public class mainFrame extends JFrame implements ActionListener {
 
         saveButton = new JButton("Save");
         saveButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        saveButton.setBackground(Color.WHITE);
+        saveButton.setBackground(new Color(251, 248, 241));
         saveButton.setBounds(528, 42, 95, 31);
         saveButton.addActionListener(this);
         saveButton.addMouseListener(new mouseAdapter());
@@ -170,7 +171,7 @@ public class mainFrame extends JFrame implements ActionListener {
 
         removeButton = new JButton("Remove");
         removeButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        removeButton.setBackground(Color.WHITE);
+        removeButton.setBackground(new Color(251, 248, 241));
         removeButton.setBounds(633, 42, 95, 31);
         removeButton.addActionListener(this);
         removeButton.addMouseListener(new mouseAdapter());

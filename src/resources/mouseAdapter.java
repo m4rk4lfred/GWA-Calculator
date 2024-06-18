@@ -16,6 +16,6 @@ public class mouseAdapter extends MouseAdapter {
     
     public void mouseExited(MouseEvent e) {
     	JButton button = (JButton)e.getSource();
-    	button.setBackground(Color.WHITE);
+    	button.setBackground(new Color(251, 248, 241));
     }
 }

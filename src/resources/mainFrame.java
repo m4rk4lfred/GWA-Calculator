@@ -69,7 +69,7 @@ public class mainFrame extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setTitle("General Weighted Average Calculator");
-        Image icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\Downloads\\discount.png");
+        Image icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Pictures\\gradeCalculator.png");
         icon.getScaledInstance(1, 1, Image.SCALE_SMOOTH);
         this.setIconImage(icon);
         this.setIconImage(icon);

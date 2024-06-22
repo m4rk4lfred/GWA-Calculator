@@ -75,7 +75,9 @@ public class mainFrame extends JFrame implements ActionListener {
         this.setIconImage(icon);
         this.setResizable(false);
         getContentPane().setLayout(null);
+        
 
+        UIManager.put("ToolTip.background", new Color(251, 248, 241));
         mainPanel = new JPanel();
         mainPanel.setBackground(new Color(251, 248, 241));
         mainPanel.setBounds(0, 0, 866, 600);
@@ -122,12 +124,14 @@ public class mainFrame extends JFrame implements ActionListener {
         gradeField.setBackground(Color.WHITE);
         gradeField.setBounds(149, 44, 130, 30);
         gradeField.setColumns(10);
+        gradeField.setToolTipText("ENTER GRADE HERE");
         mainPanel.add(gradeField);
 
 
         unitField = new JTextField();
         unitField.setBackground(Color.WHITE);
         unitField.setBounds(289, 44, 130, 31);
+        unitField.setToolTipText("ENTER UNITS HERE");
         mainPanel.add(unitField);
         unitField.setColumns(10);
 

@@ -10,6 +10,9 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.filechooser.FileSystemView;
 import javax.swing.JTextArea;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -82,6 +85,8 @@ public class saveButton extends JFrame implements ActionListener {
 
         if (saveFile == clicked) {
         	// THIS WILL SAVE THE TEXTAREA TO THE FILE MANAGER OF YOUR PC
+        	
+        	
             JFileChooser fileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
             int r = fileChooser.showSaveDialog(fileChooser);
 
